@@ -39,6 +39,8 @@ async function loadCityName() {
         console.error("Erreur lors de la récupération des données météorologiques :", error);
         }
     }
-      // Appel de la fonction pour afficher les informations de la ville configurée
+
     checkWeather();
+
+    setInterval(checkWeather, 3600000);
 
